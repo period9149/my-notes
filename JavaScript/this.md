@@ -15,7 +15,7 @@ let a = {}
 let fn = function(){
     console.log(this) 
 }
-fn.bind().bind(a)() // => ?
+fn.bind().bind(a)() 
 ```
 无论函数 bind 几次，fn 中的 this 永远由第一次 bind 决定，所以结果永远是 window。
 
