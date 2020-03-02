@@ -17,7 +17,7 @@ let fn = function(){
 }
 fn.bind().bind(a)() 
 ```
-无论函数 bind 几次，fn 中的 this 永远由第一次 bind 决定，所以结果永远是 window。
+无论函数 bind 几次，fn 中的 this 永远由第一次 bind 决定，所以结果永远是 window
 
 fn.bind().bind(a) 相当于 :
 ```js
@@ -29,5 +29,6 @@ let fn2 = function fn1() {
 fn2()
 ```
 ### 3. this的优先级 : 
-首先，new 的方式优先级最高，接下来是 bind() 这些函数，然后是 obj.foo() 这种调用方式，最后是 foo 这种调用方式，同时，箭头函数的 this 一旦被绑定，就不会再被任何方式所改变。
+首先，new 的方式优先级最高，接下来是 bind() 这些函数，然后是 obj.foo() 这种调用方式，最后是 foo 这种调用方式，同时，箭头函数的 this 一旦被绑定，就不会再被任何方式所改变
+
 ![this](../img/this.png)
