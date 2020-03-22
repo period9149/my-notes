@@ -1,2 +1,2 @@
 # my-notes
-My notes for JavaScript, Vue, etc.
+My notes for JavaScript, Computer Network, etc.
